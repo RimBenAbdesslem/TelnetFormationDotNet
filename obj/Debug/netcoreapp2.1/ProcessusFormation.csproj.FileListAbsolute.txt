@@ -1,0 +1,140 @@
+C:\Users\LENOVO\source\repos\ProcessusFormation\ProcessusFormation\bin\Debug\netcoreapp2.1\appsettings.Development.json
+C:\Users\LENOVO\source\repos\ProcessusFormation\ProcessusFormation\bin\Debug\netcoreapp2.1\appsettings.json
+C:\Users\LENOVO\source\repos\ProcessusFormation\ProcessusFormation\bin\Debug\netcoreapp2.1\Properties\launchSettings.json
+C:\Users\LENOVO\source\repos\ProcessusFormation\ProcessusFormation\bin\Debug\netcoreapp2.1\ProcessusFormation.deps.json
+C:\Users\LENOVO\source\repos\ProcessusFormation\ProcessusFormation\bin\Debug\netcoreapp2.1\ProcessusFormation.runtimeconfig.json
+C:\Users\LENOVO\source\repos\ProcessusFormation\ProcessusFormation\bin\Debug\netcoreapp2.1\ProcessusFormation.runtimeconfig.dev.json
+C:\Users\LENOVO\source\repos\ProcessusFormation\ProcessusFormation\bin\Debug\netcoreapp2.1\ProcessusFormation.dll
+C:\Users\LENOVO\source\repos\ProcessusFormation\ProcessusFormation\bin\Debug\netcoreapp2.1\ProcessusFormation.pdb
+C:\Users\LENOVO\source\repos\ProcessusFormation\ProcessusFormation\obj\Debug\netcoreapp2.1\ProcessusFormation.csprojAssemblyReference.cache
+C:\Users\LENOVO\source\repos\ProcessusFormation\ProcessusFormation\obj\Debug\netcoreapp2.1\ProcessusFormation.RazorAssemblyInfo.cache
+C:\Users\LENOVO\source\repos\ProcessusFormation\ProcessusFormation\obj\Debug\netcoreapp2.1\ProcessusFormation.RazorAssemblyInfo.cs
+C:\Users\LENOVO\source\repos\ProcessusFormation\ProcessusFormation\obj\Debug\netcoreapp2.1\ProcessusFormation.AssemblyInfoInputs.cache
+C:\Users\LENOVO\source\repos\ProcessusFormation\ProcessusFormation\obj\Debug\netcoreapp2.1\ProcessusFormation.AssemblyInfo.cs
+C:\Users\LENOVO\source\repos\ProcessusFormation\ProcessusFormation\obj\Debug\netcoreapp2.1\ProcessusFormation.RazorTargetAssemblyInfo.cache
+C:\Users\LENOVO\source\repos\ProcessusFormation\ProcessusFormation\obj\Debug\netcoreapp2.1\ProcessusFormation.dll
+C:\Users\LENOVO\source\repos\ProcessusFormation\ProcessusFormation\obj\Debug\netcoreapp2.1\ProcessusFormation.pdb
+C:\Users\user\Desktop\ENSI\ProcessusFormation-master\ProcessusFormation\bin\Debug\netcoreapp2.1\appsettings.Development.json
+C:\Users\user\Desktop\ENSI\ProcessusFormation-master\ProcessusFormation\bin\Debug\netcoreapp2.1\Properties\launchSettings.json
+C:\Users\user\Desktop\ENSI\ProcessusFormation-master\ProcessusFormation\bin\Debug\netcoreapp2.1\appsettings.json
+C:\Users\user\Desktop\ENSI\ProcessusFormation-master\ProcessusFormation\bin\Debug\netcoreapp2.1\ProcessusFormation.deps.json
+C:\Users\user\Desktop\ENSI\ProcessusFormation-master\ProcessusFormation\bin\Debug\netcoreapp2.1\ProcessusFormation.runtimeconfig.json
+C:\Users\user\Desktop\ENSI\ProcessusFormation-master\ProcessusFormation\bin\Debug\netcoreapp2.1\ProcessusFormation.runtimeconfig.dev.json
+C:\Users\user\Desktop\ENSI\ProcessusFormation-master\ProcessusFormation\bin\Debug\netcoreapp2.1\ProcessusFormation.dll
+C:\Users\user\Desktop\ENSI\ProcessusFormation-master\ProcessusFormation\bin\Debug\netcoreapp2.1\ProcessusFormation.pdb
+C:\Users\user\Desktop\ENSI\ProcessusFormation-master\ProcessusFormation\obj\Debug\netcoreapp2.1\ProcessusFormation.csprojAssemblyReference.cache
+C:\Users\user\Desktop\ENSI\ProcessusFormation-master\ProcessusFormation\obj\Debug\netcoreapp2.1\ProcessusFormation.AssemblyInfoInputs.cache
+C:\Users\user\Desktop\ENSI\ProcessusFormation-master\ProcessusFormation\obj\Debug\netcoreapp2.1\ProcessusFormation.AssemblyInfo.cs
+C:\Users\user\Desktop\ENSI\ProcessusFormation-master\ProcessusFormation\obj\Debug\netcoreapp2.1\ProcessusFormation.RazorAssemblyInfo.cache
+C:\Users\user\Desktop\ENSI\ProcessusFormation-master\ProcessusFormation\obj\Debug\netcoreapp2.1\ProcessusFormation.RazorAssemblyInfo.cs
+C:\Users\user\Desktop\ENSI\ProcessusFormation-master\ProcessusFormation\obj\Debug\netcoreapp2.1\ProcessusFormation.RazorTargetAssemblyInfo.cache
+C:\Users\user\Desktop\ENSI\ProcessusFormation-master\ProcessusFormation\obj\Debug\netcoreapp2.1\ProcessusFormation.dll
+C:\Users\user\Desktop\ENSI\ProcessusFormation-master\ProcessusFormation\obj\Debug\netcoreapp2.1\ProcessusFormation.pdb
+C:\Users\user\Desktop\ENSI\ProcessusFormation-master\ProcessusFormation\obj\Debug\netcoreapp2.1\ProcessusFormation.genruntimeconfig.cache
+C:\Users\user\Desktop\ENSI\ProcessusFormation-master\ProcessusFormation\obj\Debug\netcoreapp2.1\ProcessusFormation.csproj.CoreCompileInputs.cache
+C:\Users\user\projects\ENSI\ProcessusFormation-master\ProcessusFormation\bin\Debug\netcoreapp2.1\appsettings.Development.json
+C:\Users\user\projects\ENSI\ProcessusFormation-master\ProcessusFormation\bin\Debug\netcoreapp2.1\appsettings.json
+C:\Users\user\projects\ENSI\ProcessusFormation-master\ProcessusFormation\bin\Debug\netcoreapp2.1\Properties\launchSettings.json
+C:\Users\user\projects\ENSI\ProcessusFormation-master\ProcessusFormation\bin\Debug\netcoreapp2.1\ProcessusFormation.deps.json
+C:\Users\user\projects\ENSI\ProcessusFormation-master\ProcessusFormation\bin\Debug\netcoreapp2.1\ProcessusFormation.runtimeconfig.json
+C:\Users\user\projects\ENSI\ProcessusFormation-master\ProcessusFormation\bin\Debug\netcoreapp2.1\ProcessusFormation.runtimeconfig.dev.json
+C:\Users\user\projects\ENSI\ProcessusFormation-master\ProcessusFormation\bin\Debug\netcoreapp2.1\ProcessusFormation.dll
+C:\Users\user\projects\ENSI\ProcessusFormation-master\ProcessusFormation\bin\Debug\netcoreapp2.1\ProcessusFormation.pdb
+C:\Users\user\projects\ENSI\ProcessusFormation-master\ProcessusFormation\obj\Debug\netcoreapp2.1\ProcessusFormation.csprojAssemblyReference.cache
+C:\Users\user\projects\ENSI\ProcessusFormation-master\ProcessusFormation\obj\Debug\netcoreapp2.1\ProcessusFormation.AssemblyInfoInputs.cache
+C:\Users\user\projects\ENSI\ProcessusFormation-master\ProcessusFormation\obj\Debug\netcoreapp2.1\ProcessusFormation.AssemblyInfo.cs
+C:\Users\user\projects\ENSI\ProcessusFormation-master\ProcessusFormation\obj\Debug\netcoreapp2.1\ProcessusFormation.RazorAssemblyInfo.cache
+C:\Users\user\projects\ENSI\ProcessusFormation-master\ProcessusFormation\obj\Debug\netcoreapp2.1\ProcessusFormation.RazorAssemblyInfo.cs
+C:\Users\user\projects\ENSI\ProcessusFormation-master\ProcessusFormation\obj\Debug\netcoreapp2.1\ProcessusFormation.RazorTargetAssemblyInfo.cache
+C:\Users\user\projects\ENSI\ProcessusFormation-master\ProcessusFormation\obj\Debug\netcoreapp2.1\ProcessusFormation.dll
+C:\Users\user\projects\ENSI\ProcessusFormation-master\ProcessusFormation\obj\Debug\netcoreapp2.1\ProcessusFormation.pdb
+C:\Users\user\projects\ENSI\ProcessusFormation-master\ProcessusFormation\obj\Debug\netcoreapp2.1\ProcessusFormation.genruntimeconfig.cache
+C:\Users\user\projects\ENSI\ProcessusFormation-master\ProcessusFormation\obj\Debug\netcoreapp2.1\ProcessusFormation.csproj.CoreCompileInputs.cache
+C:\Users\Foufa\Desktop\PFE\RIM-TELNET\ProcessusFormation-master\ProcessusFormation\bin\Debug\netcoreapp2.1\appsettings.Development.json
+C:\Users\Foufa\Desktop\PFE\RIM-TELNET\ProcessusFormation-master\ProcessusFormation\bin\Debug\netcoreapp2.1\appsettings.json
+C:\Users\Foufa\Desktop\PFE\RIM-TELNET\ProcessusFormation-master\ProcessusFormation\bin\Debug\netcoreapp2.1\Properties\launchSettings.json
+C:\Users\Foufa\Desktop\PFE\RIM-TELNET\ProcessusFormation-master\ProcessusFormation\bin\Debug\netcoreapp2.1\ProcessusFormation.deps.json
+C:\Users\Foufa\Desktop\PFE\RIM-TELNET\ProcessusFormation-master\ProcessusFormation\bin\Debug\netcoreapp2.1\ProcessusFormation.runtimeconfig.json
+C:\Users\Foufa\Desktop\PFE\RIM-TELNET\ProcessusFormation-master\ProcessusFormation\bin\Debug\netcoreapp2.1\ProcessusFormation.runtimeconfig.dev.json
+C:\Users\Foufa\Desktop\PFE\RIM-TELNET\ProcessusFormation-master\ProcessusFormation\bin\Debug\netcoreapp2.1\ProcessusFormation.dll
+C:\Users\Foufa\Desktop\PFE\RIM-TELNET\ProcessusFormation-master\ProcessusFormation\bin\Debug\netcoreapp2.1\ProcessusFormation.pdb
+C:\Users\Foufa\Desktop\PFE\RIM-TELNET\ProcessusFormation-master\ProcessusFormation\obj\Debug\netcoreapp2.1\ProcessusFormation.csprojAssemblyReference.cache
+C:\Users\Foufa\Desktop\PFE\RIM-TELNET\ProcessusFormation-master\ProcessusFormation\obj\Debug\netcoreapp2.1\ProcessusFormation.AssemblyInfoInputs.cache
+C:\Users\Foufa\Desktop\PFE\RIM-TELNET\ProcessusFormation-master\ProcessusFormation\obj\Debug\netcoreapp2.1\ProcessusFormation.AssemblyInfo.cs
+C:\Users\Foufa\Desktop\PFE\RIM-TELNET\ProcessusFormation-master\ProcessusFormation\obj\Debug\netcoreapp2.1\ProcessusFormation.csproj.CoreCompileInputs.cache
+C:\Users\Foufa\Desktop\PFE\RIM-TELNET\ProcessusFormation-master\ProcessusFormation\obj\Debug\netcoreapp2.1\ProcessusFormation.RazorAssemblyInfo.cache
+C:\Users\Foufa\Desktop\PFE\RIM-TELNET\ProcessusFormation-master\ProcessusFormation\obj\Debug\netcoreapp2.1\ProcessusFormation.RazorAssemblyInfo.cs
+C:\Users\Foufa\Desktop\PFE\RIM-TELNET\ProcessusFormation-master\ProcessusFormation\obj\Debug\netcoreapp2.1\ProcessusFormation.RazorTargetAssemblyInfo.cache
+C:\Users\Foufa\Desktop\PFE\RIM-TELNET\ProcessusFormation-master\ProcessusFormation\obj\Debug\netcoreapp2.1\ProcessusFormation.dll
+C:\Users\Foufa\Desktop\PFE\RIM-TELNET\ProcessusFormation-master\ProcessusFormation\obj\Debug\netcoreapp2.1\ProcessusFormation.pdb
+C:\Users\Foufa\Desktop\PFE\RIM-TELNET\ProcessusFormation-master\ProcessusFormation\obj\Debug\netcoreapp2.1\ProcessusFormation.genruntimeconfig.cache
+C:\Users\user\projects\Telnet\ProcessusFormation-master\ProcessusFormation\bin\Debug\netcoreapp2.1\appsettings.Development.json
+C:\Users\user\projects\Telnet\ProcessusFormation-master\ProcessusFormation\bin\Debug\netcoreapp2.1\Properties\launchSettings.json
+C:\Users\user\projects\Telnet\ProcessusFormation-master\ProcessusFormation\bin\Debug\netcoreapp2.1\appsettings.json
+C:\Users\user\projects\Telnet\ProcessusFormation-master\ProcessusFormation\bin\Debug\netcoreapp2.1\ProcessusFormation.deps.json
+C:\Users\user\projects\Telnet\ProcessusFormation-master\ProcessusFormation\bin\Debug\netcoreapp2.1\ProcessusFormation.runtimeconfig.json
+C:\Users\user\projects\Telnet\ProcessusFormation-master\ProcessusFormation\bin\Debug\netcoreapp2.1\ProcessusFormation.runtimeconfig.dev.json
+C:\Users\user\projects\Telnet\ProcessusFormation-master\ProcessusFormation\bin\Debug\netcoreapp2.1\ProcessusFormation.dll
+C:\Users\user\projects\Telnet\ProcessusFormation-master\ProcessusFormation\bin\Debug\netcoreapp2.1\ProcessusFormation.pdb
+C:\Users\user\projects\Telnet\ProcessusFormation-master\ProcessusFormation\obj\Debug\netcoreapp2.1\ProcessusFormation.csprojAssemblyReference.cache
+C:\Users\user\projects\Telnet\ProcessusFormation-master\ProcessusFormation\obj\Debug\netcoreapp2.1\ProcessusFormation.AssemblyInfoInputs.cache
+C:\Users\user\projects\Telnet\ProcessusFormation-master\ProcessusFormation\obj\Debug\netcoreapp2.1\ProcessusFormation.AssemblyInfo.cs
+C:\Users\user\projects\Telnet\ProcessusFormation-master\ProcessusFormation\obj\Debug\netcoreapp2.1\ProcessusFormation.RazorAssemblyInfo.cache
+C:\Users\user\projects\Telnet\ProcessusFormation-master\ProcessusFormation\obj\Debug\netcoreapp2.1\ProcessusFormation.RazorAssemblyInfo.cs
+C:\Users\user\projects\Telnet\ProcessusFormation-master\ProcessusFormation\obj\Debug\netcoreapp2.1\ProcessusFormation.RazorTargetAssemblyInfo.cache
+C:\Users\user\projects\Telnet\ProcessusFormation-master\ProcessusFormation\obj\Debug\netcoreapp2.1\ProcessusFormation.dll
+C:\Users\user\projects\Telnet\ProcessusFormation-master\ProcessusFormation\obj\Debug\netcoreapp2.1\ProcessusFormation.pdb
+C:\Users\user\projects\Telnet\ProcessusFormation-master\ProcessusFormation\obj\Debug\netcoreapp2.1\ProcessusFormation.genruntimeconfig.cache
+C:\Users\user\projects\Telnet\ProcessusFormation-master\ProcessusFormation\obj\Debug\netcoreapp2.1\ProcessusFormation.csproj.CoreCompileInputs.cache
+C:\Users\Yassine Ouni\Desktop\Telnet\ProcessusFormation-master\ProcessusFormation\bin\Debug\netcoreapp2.1\appsettings.Development.json
+C:\Users\Yassine Ouni\Desktop\Telnet\ProcessusFormation-master\ProcessusFormation\bin\Debug\netcoreapp2.1\appsettings.json
+C:\Users\Yassine Ouni\Desktop\Telnet\ProcessusFormation-master\ProcessusFormation\bin\Debug\netcoreapp2.1\Properties\launchSettings.json
+C:\Users\Yassine Ouni\Desktop\Telnet\ProcessusFormation-master\ProcessusFormation\bin\Debug\netcoreapp2.1\ProcessusFormation.deps.json
+C:\Users\Yassine Ouni\Desktop\Telnet\ProcessusFormation-master\ProcessusFormation\bin\Debug\netcoreapp2.1\ProcessusFormation.runtimeconfig.json
+C:\Users\Yassine Ouni\Desktop\Telnet\ProcessusFormation-master\ProcessusFormation\bin\Debug\netcoreapp2.1\ProcessusFormation.runtimeconfig.dev.json
+C:\Users\Yassine Ouni\Desktop\Telnet\ProcessusFormation-master\ProcessusFormation\bin\Debug\netcoreapp2.1\ProcessusFormation.dll
+C:\Users\Yassine Ouni\Desktop\Telnet\ProcessusFormation-master\ProcessusFormation\bin\Debug\netcoreapp2.1\ProcessusFormation.pdb
+C:\Users\Yassine Ouni\Desktop\Telnet\ProcessusFormation-master\ProcessusFormation\obj\Debug\netcoreapp2.1\ProcessusFormation.AssemblyInfoInputs.cache
+C:\Users\Yassine Ouni\Desktop\Telnet\ProcessusFormation-master\ProcessusFormation\obj\Debug\netcoreapp2.1\ProcessusFormation.AssemblyInfo.cs
+C:\Users\Yassine Ouni\Desktop\Telnet\ProcessusFormation-master\ProcessusFormation\obj\Debug\netcoreapp2.1\ProcessusFormation.csproj.CoreCompileInputs.cache
+C:\Users\Yassine Ouni\Desktop\Telnet\ProcessusFormation-master\ProcessusFormation\obj\Debug\netcoreapp2.1\ProcessusFormation.RazorAssemblyInfo.cache
+C:\Users\Yassine Ouni\Desktop\Telnet\ProcessusFormation-master\ProcessusFormation\obj\Debug\netcoreapp2.1\ProcessusFormation.RazorAssemblyInfo.cs
+C:\Users\Yassine Ouni\Desktop\Telnet\ProcessusFormation-master\ProcessusFormation\obj\Debug\netcoreapp2.1\ProcessusFormation.RazorTargetAssemblyInfo.cache
+C:\Users\Yassine Ouni\Desktop\Telnet\ProcessusFormation-master\ProcessusFormation\obj\Debug\netcoreapp2.1\ProcessusFormation.dll
+C:\Users\Yassine Ouni\Desktop\Telnet\ProcessusFormation-master\ProcessusFormation\obj\Debug\netcoreapp2.1\ProcessusFormation.pdb
+C:\Users\Yassine Ouni\Desktop\Telnet\ProcessusFormation-master\ProcessusFormation\obj\Debug\netcoreapp2.1\ProcessusFormation.genruntimeconfig.cache
+C:\Users\Yassine Ouni\Desktop\Telnet\ProcessusFormation-master\ProcessusFormation\obj\Debug\netcoreapp2.1\ProcessusFormation.csprojAssemblyReference.cache
+C:\Users\Foufa\Desktop\Telnet\Telnet\ProcessusFormation-master\ProcessusFormation\bin\Debug\netcoreapp2.1\appsettings.Development.json
+C:\Users\Foufa\Desktop\Telnet\Telnet\ProcessusFormation-master\ProcessusFormation\bin\Debug\netcoreapp2.1\Properties\launchSettings.json
+C:\Users\Foufa\Desktop\Telnet\Telnet\ProcessusFormation-master\ProcessusFormation\bin\Debug\netcoreapp2.1\appsettings.json
+C:\Users\Foufa\Desktop\Telnet\Telnet\ProcessusFormation-master\ProcessusFormation\bin\Debug\netcoreapp2.1\ProcessusFormation.deps.json
+C:\Users\Foufa\Desktop\Telnet\Telnet\ProcessusFormation-master\ProcessusFormation\bin\Debug\netcoreapp2.1\ProcessusFormation.runtimeconfig.json
+C:\Users\Foufa\Desktop\Telnet\Telnet\ProcessusFormation-master\ProcessusFormation\bin\Debug\netcoreapp2.1\ProcessusFormation.runtimeconfig.dev.json
+C:\Users\Foufa\Desktop\Telnet\Telnet\ProcessusFormation-master\ProcessusFormation\bin\Debug\netcoreapp2.1\ProcessusFormation.dll
+C:\Users\Foufa\Desktop\Telnet\Telnet\ProcessusFormation-master\ProcessusFormation\bin\Debug\netcoreapp2.1\ProcessusFormation.pdb
+C:\Users\Foufa\Desktop\Telnet\Telnet\ProcessusFormation-master\ProcessusFormation\obj\Debug\netcoreapp2.1\ProcessusFormation.csprojAssemblyReference.cache
+C:\Users\Foufa\Desktop\Telnet\Telnet\ProcessusFormation-master\ProcessusFormation\obj\Debug\netcoreapp2.1\ProcessusFormation.AssemblyInfoInputs.cache
+C:\Users\Foufa\Desktop\Telnet\Telnet\ProcessusFormation-master\ProcessusFormation\obj\Debug\netcoreapp2.1\ProcessusFormation.AssemblyInfo.cs
+C:\Users\Foufa\Desktop\Telnet\Telnet\ProcessusFormation-master\ProcessusFormation\obj\Debug\netcoreapp2.1\ProcessusFormation.csproj.CoreCompileInputs.cache
+C:\Users\Foufa\Desktop\Telnet\Telnet\ProcessusFormation-master\ProcessusFormation\obj\Debug\netcoreapp2.1\ProcessusFormation.RazorAssemblyInfo.cache
+C:\Users\Foufa\Desktop\Telnet\Telnet\ProcessusFormation-master\ProcessusFormation\obj\Debug\netcoreapp2.1\ProcessusFormation.RazorAssemblyInfo.cs
+C:\Users\Foufa\Desktop\Telnet\Telnet\ProcessusFormation-master\ProcessusFormation\obj\Debug\netcoreapp2.1\ProcessusFormation.RazorTargetAssemblyInfo.cache
+C:\Users\Foufa\Desktop\Telnet\Telnet\ProcessusFormation-master\ProcessusFormation\obj\Debug\netcoreapp2.1\ProcessusFormation.dll
+C:\Users\Foufa\Desktop\Telnet\Telnet\ProcessusFormation-master\ProcessusFormation\obj\Debug\netcoreapp2.1\ProcessusFormation.pdb
+C:\Users\Foufa\Desktop\Telnet\Telnet\ProcessusFormation-master\ProcessusFormation\obj\Debug\netcoreapp2.1\ProcessusFormation.genruntimeconfig.cache
+C:\Users\LENOVO\Downloads\FinalyTelnetFormationProject\Telnet-master\ProcessusFormation-master\ProcessusFormation\bin\Debug\netcoreapp2.1\appsettings.Development.json
+C:\Users\LENOVO\Downloads\FinalyTelnetFormationProject\Telnet-master\ProcessusFormation-master\ProcessusFormation\bin\Debug\netcoreapp2.1\Properties\launchSettings.json
+C:\Users\LENOVO\Downloads\FinalyTelnetFormationProject\Telnet-master\ProcessusFormation-master\ProcessusFormation\bin\Debug\netcoreapp2.1\appsettings.json
+C:\Users\LENOVO\Downloads\FinalyTelnetFormationProject\Telnet-master\ProcessusFormation-master\ProcessusFormation\bin\Debug\netcoreapp2.1\ProcessusFormation.deps.json
+C:\Users\LENOVO\Downloads\FinalyTelnetFormationProject\Telnet-master\ProcessusFormation-master\ProcessusFormation\bin\Debug\netcoreapp2.1\ProcessusFormation.runtimeconfig.json
+C:\Users\LENOVO\Downloads\FinalyTelnetFormationProject\Telnet-master\ProcessusFormation-master\ProcessusFormation\bin\Debug\netcoreapp2.1\ProcessusFormation.runtimeconfig.dev.json
+C:\Users\LENOVO\Downloads\FinalyTelnetFormationProject\Telnet-master\ProcessusFormation-master\ProcessusFormation\bin\Debug\netcoreapp2.1\ProcessusFormation.dll
+C:\Users\LENOVO\Downloads\FinalyTelnetFormationProject\Telnet-master\ProcessusFormation-master\ProcessusFormation\bin\Debug\netcoreapp2.1\ProcessusFormation.pdb
+C:\Users\LENOVO\Downloads\FinalyTelnetFormationProject\Telnet-master\ProcessusFormation-master\ProcessusFormation\obj\Debug\netcoreapp2.1\ProcessusFormation.csprojAssemblyReference.cache
+C:\Users\LENOVO\Downloads\FinalyTelnetFormationProject\Telnet-master\ProcessusFormation-master\ProcessusFormation\obj\Debug\netcoreapp2.1\ProcessusFormation.RazorAssemblyInfo.cache
+C:\Users\LENOVO\Downloads\FinalyTelnetFormationProject\Telnet-master\ProcessusFormation-master\ProcessusFormation\obj\Debug\netcoreapp2.1\ProcessusFormation.RazorAssemblyInfo.cs
+C:\Users\LENOVO\Downloads\FinalyTelnetFormationProject\Telnet-master\ProcessusFormation-master\ProcessusFormation\obj\Debug\netcoreapp2.1\ProcessusFormation.AssemblyInfoInputs.cache
+C:\Users\LENOVO\Downloads\FinalyTelnetFormationProject\Telnet-master\ProcessusFormation-master\ProcessusFormation\obj\Debug\netcoreapp2.1\ProcessusFormation.AssemblyInfo.cs
+C:\Users\LENOVO\Downloads\FinalyTelnetFormationProject\Telnet-master\ProcessusFormation-master\ProcessusFormation\obj\Debug\netcoreapp2.1\ProcessusFormation.RazorTargetAssemblyInfo.cache
+C:\Users\LENOVO\Downloads\FinalyTelnetFormationProject\Telnet-master\ProcessusFormation-master\ProcessusFormation\obj\Debug\netcoreapp2.1\ProcessusFormation.dll
+C:\Users\LENOVO\Downloads\FinalyTelnetFormationProject\Telnet-master\ProcessusFormation-master\ProcessusFormation\obj\Debug\netcoreapp2.1\ProcessusFormation.pdb
