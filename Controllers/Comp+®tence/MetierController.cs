@@ -184,7 +184,8 @@ namespace ProcessusFormation.Controllers.Compétence
         {
             public static int labelId=0;
             public static int Niveau=0;
-          //  public static string UserName = "";
+            public static int metierId = 0;
+            //  public static string UserName = "";
         };
         public static class Userobj
         {
@@ -219,8 +220,9 @@ namespace ProcessusFormation.Controllers.Compétence
                 {
                     obj.labelId = element.LabelId;
                     obj.Niveau = element.Niveau;
+                    obj.metierId = element.MetierId;
                  //   obj.UserName = user.UserName + user.FullName;
-                    List.Add(new{ obj.labelId,obj.Niveau});
+                    List.Add(new{ obj.labelId,obj.Niveau, obj.metierId });
 
                 }
             };

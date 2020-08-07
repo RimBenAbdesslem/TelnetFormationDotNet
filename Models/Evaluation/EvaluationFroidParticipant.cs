@@ -9,6 +9,7 @@ namespace ProcessusFormation.Models.Evaluation
     {
         public int Id { get; set; }
         public string Theme { get; set; }
+        public string IdParticipant { get; set; }
         public string Lieu { get; set; }
         public string Organisme { get; set; }
         public string Formateur { get; set; }

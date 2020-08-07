@@ -9,6 +9,7 @@ using ProcessusFormation.Models.Formation;
 using ProcessusFormation.Models.Compétence;
 using ProcessusFormation.Models.Evaluation;
 using Microsoft.AspNetCore.Identity;
+using ProcessusFormation.Models.Comp__tence;
 //using ProcessusFormation.Models.Formation;
 
 namespace ProcessusFormation.Data
@@ -36,7 +37,7 @@ namespace ProcessusFormation.Data
         public DbSet<EvaluationFroidParticipant> EvaluationFroidParticipants { get; set; }
         public DbSet<MetierModel> Metiers { get; set; }
         public DbSet<Intermidiaire> Intermidiaires { get; set; }
-
+        public DbSet<ActiviteModel> Activites { get; set; }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
 

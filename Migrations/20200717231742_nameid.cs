@@ -209,7 +209,19 @@ namespace ProcessusFormation.Migrations
                 {
                     table.PrimaryKey("PK_EvaluationFroidParticipants", x => x.Id);
                 });
+            migrationBuilder.CreateTable(
+              name: "Activites",
+              columns: table => new
+              {
+                  Id = table.Column<int>(nullable: false)
+                      .Annotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn),
+                  NomActivite = table.Column<string>(nullable: true),
 
+              },
+              constraints: table =>
+              {
+                  table.PrimaryKey("PK_Activites", x => x.Id);
+              });
             migrationBuilder.CreateTable(
                 name: "EvaluationFroids",
                 columns: table => new

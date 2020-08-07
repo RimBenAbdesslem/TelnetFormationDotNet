@@ -78,6 +78,7 @@ namespace ProcessusFormation.Controllers.Evaluation
                 question_B = model.question_B,
                 Comment = model.Comment,
                 Commentaire1 = model.Commentaire1,
+                IdParticipant=model.IdParticipant,
             };
             await _context.EvaluationFroidParticipants.AddAsync(evalauation);
              _context.SaveChanges();
