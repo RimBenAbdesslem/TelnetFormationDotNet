@@ -222,6 +222,7 @@ namespace ProcessusFormation.Migrations
               {
                   table.PrimaryKey("PK_Activites", x => x.Id);
               });
+
             migrationBuilder.CreateTable(
                 name: "EvaluationFroids",
                 columns: table => new
@@ -314,6 +315,39 @@ namespace ProcessusFormation.Migrations
                     table.PrimaryKey("PK_Metiers", x => x.MetierId);
                 });
 
+            migrationBuilder.CreateTable(
+                name: "ActiviteMetiers",
+                columns: table => new
+                {
+                    ActivMetId = table.Column<int>(nullable: false)
+                        .Annotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn),
+                    DomaineId = table.Column<int>(nullable: false),
+                    UserId = table.Column<string>(nullable: true),
+                    LabelId = table.Column<int>(nullable: false),
+                    ActiviteId = table.Column<int>(nullable: false),
+                    Niveau = table.Column<int>(nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_ActiviteMetiers", x => x.ActivMetId);
+                });
+            migrationBuilder.CreateTable(
+               name: "ListeActivites",
+               columns: table => new
+               {
+                   ListActivId = table.Column<int>(nullable: false)
+                       .Annotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn),
+                   DomaineId = table.Column<int>(nullable: false),
+                   LabelId = table.Column<int>(nullable: false),
+                   ActiviteId = table.Column<int>(nullable: false),
+                   NomDomaine = table.Column<string>(nullable: true),
+                   NomActivite = table.Column<string>(nullable: true),
+                   NomLabel = table.Column<string>(nullable: false)
+               },
+               constraints: table =>
+               {
+                   table.PrimaryKey("PK_ListeActivites", x => x.ListActivId);
+               });
             migrationBuilder.CreateTable(
                 name: "ParticipantModels",
                 columns: table => new

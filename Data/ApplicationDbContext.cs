@@ -38,6 +38,8 @@ namespace ProcessusFormation.Data
         public DbSet<MetierModel> Metiers { get; set; }
         public DbSet<Intermidiaire> Intermidiaires { get; set; }
         public DbSet<ActiviteModel> Activites { get; set; }
+        public DbSet<ActiviteMetierModel> ActiviteMetiers { get; set; }
+        public DbSet<ListeActiviteModel> ListeActivites { get; set; }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
 
