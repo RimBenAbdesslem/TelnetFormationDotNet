@@ -41,7 +41,7 @@ namespace ProcessusFormation.Controllers.Evaluation
             {
                 throw new ArgumentNullException(nameof(model));
             }
-
+          
             var evalauation = new EvaluationFroid()
             {
                 Theme = model.Theme,
@@ -130,6 +130,43 @@ namespace ProcessusFormation.Controllers.Evaluation
             }
 
             return (Evaluation);
+        }
+        //Calcule de taux d'efficacité d'une formation
+        public static class Evalobj
+        {
+            public static Double NbTotalEvaluation = 0;
+            public static Double NbEfficaceEval = 0;
+            public static Double taux = 0;
+            public static int annee = 0;
+
+            //  public static string UserName = "";
+        };
+        [HttpGet]
+        [Route("CalculeTauxEfficacite")]
+        public IEnumerable<Object> TauxEfficacité()
+        {
+            List<int> distinctItems = new List<int>();
+            List<Object> List = new List<Object>();
+            var evaluation = _context.EvaluationFroids.Where(x => x.Critere9 == "oui");
+            foreach (var element in evaluation)
+            { if(!distinctItems.Contains(element.Date_Fin.Year))
+                {
+                    distinctItems.Add(element.Date_Fin.Year);
+                }
+            }
+        
+            for (var i=0;i< distinctItems.Count(); i++)
+            {
+                Evalobj.NbTotalEvaluation = _context.EvaluationFroids.Where(x => x.Date_Fin.Year == distinctItems[i]).Count();
+                Evalobj.NbEfficaceEval = _context.EvaluationFroids.Where(x => x.Critere9 == "oui" && x.Date_Fin.Year==distinctItems[i]).Count();
+                Evalobj.taux = (Evalobj.NbEfficaceEval / Evalobj.NbTotalEvaluation);
+                Evalobj.annee = distinctItems[i];
+                List.Add(new { Evalobj.NbTotalEvaluation, Evalobj.NbEfficaceEval, Evalobj.taux, Evalobj.annee }) ;
+            }
+            //  Double NbEfficaceEval = _context.EvaluationFroids.Where(x => x.Critere9 == "oui").Count();
+
+
+           return List;
         }
     }
 }

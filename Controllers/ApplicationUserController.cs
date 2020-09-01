@@ -8,6 +8,8 @@ using System.Threading.Tasks;
 using ProcessusFormation.Data;
 using ProcessusFormation.Models;
 using Microsoft.AspNetCore.Http;
+using System.Net.Http.Headers;
+using System.IO;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Options;
@@ -35,6 +37,37 @@ namespace ProcessusFormation.Controllers
             _roleManager = roleManager;
         }
 
+
+
+        [HttpPost, DisableRequestSizeLimit]
+        public IActionResult Upload()
+        {
+            try
+            {
+                var file = Request.Form.Files[0];
+                var folderName = Path.Combine("Models", "Images");
+                var pathToSave = Path.Combine(Directory.GetCurrentDirectory(), folderName);
+                if (file.Length > 0)
+                {
+                    var fileName = ContentDispositionHeaderValue.Parse(file.ContentDisposition).FileName.Trim('"');
+                    var fullPath = Path.Combine(pathToSave, fileName);
+                    var dbPath = Path.Combine(folderName, fileName);
+                    using (var stream = new FileStream(fullPath, FileMode.Create))
+                    {
+                        file.CopyTo(stream);
+                    }
+                    return Ok(new { dbPath });
+                }
+                else
+                {
+                    return BadRequest();
+                }
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, $"Internal server error: {ex}");
+            }
+        }
         //register user
 
         [HttpPost]
@@ -48,6 +81,7 @@ namespace ProcessusFormation.Controllers
                 Email = model.Email,
                 FullName = model.FullName,
                 Valide = model.Valide,
+                ImagePath = "",
 
             };
             try
@@ -225,7 +259,7 @@ namespace ProcessusFormation.Controllers
 
         //ajouter un nouveau  role
         [HttpPost]
-        [Route("EditRole")]
+        [Route("AddRole")]
         public async Task<ActionResult> CreateAsync(IdentityRole model)
         {
             var result = await _roleManager.CreateAsync(model);

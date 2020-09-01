@@ -15,6 +15,8 @@ namespace ProcessusFormation.Models
         public string FullName { get; set; }
         public string Valide { get; set; }
         public string Role { get; internal set; }
+        public string ImagePath { get; internal set; }
+        // public IFormFile ImagePath { get; internal set; }
         public List<ParticipantToFormationModel> ParticipantToFormations { get; set; }
         //public string Role { get; set; }
         // public IList<string> Roles { get; internal set; }

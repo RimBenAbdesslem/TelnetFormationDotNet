@@ -21,6 +21,71 @@ namespace ProcessusFormation.Controllers.Formation
             _context = context;
         }
 
+        [HttpGet]
+        [Route("FormationPlanifier/{id}")]
+        public IActionResult GetFormationPlanifier(string id)
+        {
+            DateTime thisDay = DateTime.Today;
+            var query = _context.ParticipantFormation.Where(x => x.ParticipantId == id)
+                .Join(
+                _context.BesoinFormationModels.Where(x => x.FormationType == "BesoinCollecte"&& x.Date_Fin > thisDay),
+                ParticipantFormation => ParticipantFormation.BesoinFormationId,
+
+                BesoinFormationModel => BesoinFormationModel.BesoinFormationId,
+
+                (ParticipantFormation, BesoinFormationModel) => 
+                
+                    BesoinFormationModel
+
+
+
+                
+
+
+
+                ).ToList();
+
+            return Ok(query);
+        }
+        [HttpGet]
+        [Route("FormationRealise/{id}")]
+        public IActionResult Details(string id)
+        {
+            DateTime thisDay = DateTime.Today;
+            var query = _context.ParticipantFormation.Where(x => x.ParticipantId == id)
+                .Join(
+                _context.BesoinFormationModels.Where(x => x.FormationType == "BesoinCollecte" && x.Date_Fin < thisDay),
+                ParticipantFormation => ParticipantFormation.BesoinFormationId,
+
+                BesoinFormationModel => BesoinFormationModel.BesoinFormationId,
+
+                (ParticipantFormation, BesoinFormationModel) => 
+                
+                    BesoinFormationModel).ToList();
+
+            return Ok(query);
+        }
+        //lazem nzid chams n7ot fih Id de participant
+        [HttpGet]
+        [Route("AffichageEvalChaud/{id}")]
+        public IActionResult AffichageEvalChaud(string id)
+        {
+
+            var query = _context.EvaluationChauds.Where(x => x.IdParticipant == id);
+              
+
+            return Ok(query);
+        }
+        [HttpGet]
+        [Route("AffichageEvalFroid/{id}")]
+        public IActionResult AffichageEvalFroid(string id)
+        {
+
+            var query = _context.EvaluationChauds.Where(x => x.IdParticipant == id);
+
+
+            return Ok(query);
+        }
         // GET: api/Formation
         [HttpGet]
         public IEnumerable<BesoinFormationModel> GetBesoinFormations()
@@ -95,6 +160,7 @@ namespace ProcessusFormation.Controllers.Formation
             {
                 return BadRequest();
             }
+            //ici la formation enregistre apres que l'admin complete de remplire le resencement de besoin
             besoinFormationModel.FormationType = "BesoinCollecte";
             _context.Entry(besoinFormationModel).State = EntityState.Modified;
 
@@ -125,25 +191,41 @@ namespace ProcessusFormation.Controllers.Formation
             {
                 return BadRequest(ModelState);
             }
+            //besoin formation ici c'est la formulaire remplit par directeur activite
             besoinFormationModel.FormationType = "BesoinFormation";
             _context.BesoinFormationModels.Add(besoinFormationModel);
             await _context.SaveChangesAsync();
 
             return CreatedAtAction("GetBesoinFormationModel", new { id = besoinFormationModel.BesoinFormationId }, besoinFormationModel);
         }
-
-        // DELETE: api/Formation/5
+       
+        //DELETE: api/Formation/5
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteBesoinFormationModel([FromRoute] string id)
         {
+            List<ParticipantFormation> distinctItems = new List<ParticipantFormation>();
             try
             {
                 if (!ModelState.IsValid)
                 {
                     return BadRequest(ModelState);
                 }
+                var besoin = _context.ParticipantFormation;
+                foreach (var element in besoin)
+                {
+                    if (element.BesoinFormationId == id) //&& element.LabelId == model.LabelId
+                    {
+                        //  yield return element;
+                        _context.ParticipantFormation.Remove(element);
+                    //    distinctItems.Add(element);
 
+
+
+                    }
+                }
+                await _context.SaveChangesAsync();
                 var besoinFormationModel = await _context.BesoinFormationModels.FindAsync(id);
+              
                 if (besoinFormationModel == null)
                 {
                     return NotFound();

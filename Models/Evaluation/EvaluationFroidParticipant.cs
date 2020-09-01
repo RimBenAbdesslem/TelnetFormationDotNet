@@ -10,6 +10,7 @@ namespace ProcessusFormation.Models.Evaluation
         public int Id { get; set; }
         public string Theme { get; set; }
         public string IdParticipant { get; set; }
+        public string IdDirecteur { get; set; }
         public string Lieu { get; set; }
         public string Organisme { get; set; }
         public string Formateur { get; set; }
@@ -27,7 +28,7 @@ namespace ProcessusFormation.Models.Evaluation
         public string Lesquelles { get; set; } //
         public string PourquoiA { get; set; }//
         public string Autres1 { get; set; }//
-
+      //  public string IdParticipant { get; set; }
         public string Comment { get; set; }//
         public string PourquoiB { get; set; }//
 

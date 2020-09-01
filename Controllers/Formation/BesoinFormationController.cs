@@ -10,8 +10,8 @@ using System.Collections;
 using Microsoft.EntityFrameworkCore;
 
 namespace ProcessusFormation.Controllers.Formation
-{
-    [Route("api/[controller]")]
+
+{[Route("api/[controller]")]
     [ApiController]
     public class BesoinFormationController : ControllerBase
     {
@@ -67,6 +67,7 @@ namespace ProcessusFormation.Controllers.Formation
         [Route("GetOnBesoin")]
         public async Task<object> GetBesoinFormation()
         {
+          
             Console.WriteLine(MyGlobals.key);
             if (MyGlobals.key is null)
             {
@@ -96,16 +97,71 @@ namespace ProcessusFormation.Controllers.Formation
             return (BesoinFormation);
         }
 
-
+        public static class obj
+        {
+            public static string IdFormation = "";
+            public static Double NbParticipant = 0;
+            public static Double NbEvaluation = 0;
+            public static int Anne = 0;
+            public static Double Taux = 0;
+            //  public static string UserName = "";
+        };
+        public static class Evalobj
+        {
+            public static string IdFormation = "";
+            public static int NbParticipant = 0;
+           
+            //  public static string UserName = "";
+        };
         //top 5 formateurs 
         [HttpGet]
         [Route("getCountBesoinFormations")]
         public IActionResult getCountBesoinFormations()
         {
-            var BesoinFormation = _context.BesoinFormationModels.ToList().Where(x => x.FormationType == "BesoinFormation").Count();
-            var BesoinCollecte = _context.BesoinFormationModels.ToList().Where(x => x.FormationType == "BesoinCollecte").Count();
-            return Ok(new { BesoinFormation = BesoinFormation, BesoinCollecte = BesoinCollecte });
+            DateTime thisDay = DateTime.Today;
+            var réaliser  = _context.BesoinFormationModels.ToList().Where(x => x.FormationType == "BesoinCollecte" && x.Date_Fin< thisDay && x.Date_Fin.Year == thisDay.Year).Count();//BesoinFormation
+         var planifier = _context.BesoinFormationModels.ToList().Where(x => x.FormationType == "BesoinCollecte" && x.Date_Fin > thisDay && x.Date_Fin.Year == thisDay.Year).Count();//BesoinCollecte
+        return Ok(new { Formations_réalisées = réaliser, Formations_planifiées = planifier });
         }
+        [HttpGet]
+        [Route("TauxDeParticipation")]
+        public IEnumerable<Object> getTauxParticipation()
+        {
+            DateTime thisDay = DateTime.Today;
+            List<Object> List = new List<Object>();
+            List<Object> ListEval = new List<Object>();
+            var FormationRéaliser = _context.BesoinFormationModels.Where(x => x.FormationType == "BesoinCollecte" && x.Date_Fin < thisDay);//BesoinFormation
+            var EvalautionFormation = _context.EvaluationFroidParticipants;
+            foreach (var element in FormationRéaliser)
+            {
+             
+                obj.IdFormation = element.BesoinFormationId;
+                    obj.NbParticipant = int.Parse(element.Nombre_de_participants);
+                    obj.NbEvaluation = _context.EvaluationFroidParticipants.Where(x => x.Lieu == element.BesoinFormationId).Count();
+                obj.Taux = (obj.NbEvaluation / obj.NbParticipant)*100;
+                 obj.Anne = element.Date_Fin.Year;
+                //   obj.UserName = user.UserName + user.FullName;
+                List.Add(new { obj.IdFormation, obj.NbParticipant, obj.NbEvaluation, obj.Anne, obj.Taux });
+              //  return List;
 
+            };
+
+            foreach (var element in EvalautionFormation)
+            {
+
+                Evalobj.IdFormation = element.Lieu;
+                Evalobj.NbParticipant = _context.EvaluationFroidParticipants.ToList().Where(x=>x.Lieu==element.Lieu).Count();
+
+                //   obj.UserName = user.UserName + user.FullName;
+                ListEval.Add(new { obj.IdFormation, obj.NbParticipant });
+                //  return List;
+
+            };
+            //  return List;
+
+
+
+           return List;
+        }
     }
 }

@@ -43,6 +43,7 @@ namespace ProcessusFormation.Migrations
                     AccessFailedCount = table.Column<int>(nullable: false),
                     FullName = table.Column<string>(type: "nvarchar(150)", nullable: true),
                     Valide = table.Column<string>(nullable: true),
+                    ImagePath = table.Column<string>(nullable: true),
                     Role = table.Column<string>(nullable: true)
                 },
                 constraints: table =>
@@ -94,6 +95,22 @@ namespace ProcessusFormation.Migrations
                 {
                     table.PrimaryKey("PK_BesoinFormationModels", x => x.BesoinFormationId);
                 });
+            migrationBuilder.CreateTable(
+               name: "EvaluationFournisseurs",
+               columns: table => new
+               {
+                   Id = table.Column<int>(nullable: false),
+                   Nom_Fournisseur = table.Column<string>(nullable: true),
+                   Categorie = table.Column<string>(nullable: true),
+                   Conformite = table.Column<string>(nullable: true),
+                   Date_Evaluation = table.Column<DateTime>(nullable: false),
+                   Semestre = table.Column<string>(nullable: true),
+                   Totale_evaluation = table.Column<int>(nullable: true),
+               },
+               constraints: table =>
+               {
+                   table.PrimaryKey("PK_EvaluationFournisseurs", x => x.Id);
+               });
 
             migrationBuilder.CreateTable(
                 name: "CompetenceEvaluationFroids",
@@ -170,6 +187,8 @@ namespace ProcessusFormation.Migrations
                     Score_Satisfaction = table.Column<int>(nullable: false),
                     Commentaire1 = table.Column<string>(nullable: true),
                     Commentaire2 = table.Column<string>(nullable: true),
+                    IdParticipant = table.Column<string>(nullable: true),
+                    IdDirecteur = table.Column<string>(nullable: true),
                     Commentaire3 = table.Column<string>(nullable: true)
                 },
                 constraints: table =>
@@ -203,6 +222,8 @@ namespace ProcessusFormation.Migrations
                     Autres1 = table.Column<string>(nullable: true),
                     Comment = table.Column<string>(nullable: true),
                     PourquoiB = table.Column<string>(nullable: true),
+                    IdParticipant = table.Column<string>(nullable: true),
+                    IdDirecteur = table.Column<string>(nullable: true),
                     Commentaire1 = table.Column<string>(nullable: true)
                 },
                 constraints: table =>
@@ -325,6 +346,9 @@ namespace ProcessusFormation.Migrations
                     UserId = table.Column<string>(nullable: true),
                     LabelId = table.Column<int>(nullable: false),
                     ActiviteId = table.Column<int>(nullable: false),
+                    NomDomaine = table.Column<string>(nullable: true),
+                    NomActivite = table.Column<string>(nullable: true),
+                    NomLabel = table.Column<string>(nullable: false),
                     Niveau = table.Column<int>(nullable: false)
                 },
                 constraints: table =>

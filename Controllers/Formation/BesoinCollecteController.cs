@@ -97,9 +97,91 @@ namespace ProcessusFormation.Controllers.Formation
             return Ok();
         }
 
+     
+        // determiner le nombre de formation ili charek fihom participant(réalisé) w ili mazel me charekech fihom(planifié)
+        [HttpGet]
+        [Route("NombreFormation/{id}")]
+        public IActionResult GetNombreFormation(string id)
+        {
+            int NbrFormationRéaliser=0;
+            int NbrFormationPlanifié=0;
+            DateTime thisDay = DateTime.Today;
+            List<String> ListeIdFormation = new List<String>();
+            List<int> liste = new List<int>();
+            var BesoinsCollecte = _context.BesoinFormationModels.Where(x => x.FormationType == "BesoinCollecte");
+            //   var BesoinsPlanifié = _context.BesoinFormationModels.Where(x => x.FormationType == "BesoinCollecte");
+            var ParticipantFormation = _context.ParticipantFormation;
+            foreach (var element in ParticipantFormation)
+            {
+                if (element.ParticipantId == id)
+                {
+                    ListeIdFormation.Add(element.BesoinFormationId);
+                    //  yield return (element);
 
+                };
+            }
+            foreach (var element in BesoinsCollecte)
+            {
 
+                for (int j = 0; j < ListeIdFormation.Count; j++)
+                {
+                    if (element.BesoinFormationId == ListeIdFormation[j]  && element.Date_Fin < thisDay)
+                    {
+                       
+                      
+                            NbrFormationRéaliser  = NbrFormationRéaliser + 1;
+                    }
+                   
+                }
+            }
+            foreach (var element in BesoinsCollecte)
+            {
 
+                for (int j = 0; j < ListeIdFormation.Count; j++)
+                {
+                    if (element.BesoinFormationId == ListeIdFormation[j] && element.Date_Fin > thisDay)
+                    {
+                        NbrFormationPlanifié = NbrFormationPlanifié + 1;
+                    }
+                   
+                }
+            }
+         //   yield return liste;
+          return Ok(new { Nombre_Formations_realises = NbrFormationRéaliser, Nombre_Formations_planifies = NbrFormationPlanifié, year = thisDay.Year, Month= thisDay.Month, Day = thisDay.Day }) ;
+           
+        }
+        // determiner les formations que le participant a été presente
+        [HttpGet]
+        [Route("FormationRealise/{id}")]
+        public IEnumerable<Object> GetFormationRealise(string id)
+        {
+            List<String> ListeIdFormation = new List<String>();
+            List<BesoinFormationModel> distinctItems = new List<BesoinFormationModel>();
+            DateTime thisDay = DateTime.Today;
+            var BesoinsCollecte = _context.BesoinFormationModels.Where(x => x.FormationType == "BesoinCollecte");
+            var ParticipantFormation = _context.ParticipantFormation;
+            foreach (var element in ParticipantFormation)
+            {
+                if (element.ParticipantId == id)
+                {
+                    ListeIdFormation.Add(element.BesoinFormationId);
+                    //  yield return (element);
+
+                };
+            }
+            foreach (var element in BesoinsCollecte)
+            {
+
+                for (int j = 0; j < ListeIdFormation.Count; j++)
+                {
+                    if (element.BesoinFormationId == ListeIdFormation[j] && !distinctItems.Contains(element) && element.Date_Fin < thisDay)
+                    {
+                        distinctItems.Add(element);
+                    }
+                }
+            }
+            return distinctItems;
+        }
 
         //affichage de formation selon date 
 
@@ -109,7 +191,8 @@ namespace ProcessusFormation.Controllers.Formation
         {
             DateTime thisDay = DateTime.Today;
 
-            var BesoinsCollecte = _context.BesoinCollectes;
+            //   var BesoinsCollecte = _context.BesoinCollectes;
+            var BesoinsCollecte = _context.BesoinFormationModels.Where(x => x.FormationType == "BesoinCollecte");
 
             if (BesoinsCollecte == null)
             {

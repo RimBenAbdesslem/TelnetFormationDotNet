@@ -40,31 +40,55 @@ namespace ProcessusFormation.Controllers.Evaluation
 
        
         [HttpPost]
-        [Route("RegisterEvaluationFroidParticipant/{id}")]
-        public async Task<IActionResult> Evaluation(string id, EvaluationFroidParticipant model)
+        [Route("RegisterEvaluationFroidParticipant")]
+        public async Task<IActionResult> Evaluation( EvaluationFroidParticipant model)
 
         {  //id : c'est l'id de directeur activité
             //lazem nrecuperi aussi id participant et id de cette formation aprés register 
             //id de participant njibha m3a model mel front w ba3ed nlawej aleha f back w nest8al id pour enregistre f tab jdid
             ApplicationUser participant = await _userManager.FindByIdAsync(model.Nom_Participant);
-            ApplicationUser directeur= await _userManager.FindByIdAsync(id);
-            if (model is null)
-            {
-                throw new ArgumentNullException(nameof(model));
-            }
+           // ApplicationUser directeur= await _userManager.FindByIdAsync(id);
 
-          
+           // string name;
+            var query = _userManager.Users;
+            string mail;
+            foreach (var element in query)
+            {
+                if (element.Id == model.IdParticipant) //&& element.LabelId == model.LabelId
+                {
+
+                    model.Nom_Participant = element.UserName;
+                 //   var result = await _context.EvaluationFroidParticipants.AddAsync(model);
+
+
+                }
+            };
+           
+            foreach (var element in query)
+            {
+                if (element.Id == model.IdDirecteur) //&& element.LabelId == model.LabelId
+                {
+                   // model.IdDirecteur = element.Id;
+                    model.Formateur = element.UserName +""+ element.FullName ;
+                    mail = element.Email;
+                    Sendmail(element.Email);
+                    //   var result = await _context.EvaluationFroidParticipants.AddAsync(model);
+
+
+                }
+            };
+           
 
             var evalauation = new EvaluationFroidParticipant()
             {
                 Theme = model.Theme,
                 Lieu = model.Lieu,
                 Organisme = model.Organisme,
-                Formateur = directeur.UserName + directeur.FullName,
+                Formateur = model.Formateur,
                 Date_Evaluation_Froid = model.Date_Evaluation_Froid,
                 Date_Debut = model.Date_Debut,
                 Date_Fin = model.Date_Fin,
-                Nom_Participant = participant.UserName,
+                Nom_Participant = model.Nom_Participant,
                 Prenom_Participant = participant.FullName,
                 Matricule = model.Matricule,
                 Fonction = model.Fonction,
@@ -79,6 +103,7 @@ namespace ProcessusFormation.Controllers.Evaluation
                 Comment = model.Comment,
                 Commentaire1 = model.Commentaire1,
                 IdParticipant=model.IdParticipant,
+                IdDirecteur = model.IdDirecteur,
             };
             await _context.EvaluationFroidParticipants.AddAsync(evalauation);
              _context.SaveChanges();
@@ -87,7 +112,7 @@ namespace ProcessusFormation.Controllers.Evaluation
             var intermidiare = new Intermidiaire()
             {
                 ParticipantId = model.Nom_Participant,
-                DirectActivId=id,
+                DirectActivId= model.IdDirecteur,
                 EvaluatFroidId= evalauation.Id
 
             };
@@ -98,8 +123,8 @@ namespace ProcessusFormation.Controllers.Evaluation
 
             _context.SaveChanges();
            // ApplicationUser user = await _userManager.FindByIdAsync(id);
-            var mail = directeur.Email;
-            Sendmail(mail);
+           // var mail = directeur.Email;
+           
             return Ok(new { MyGlobal.key });
 
 

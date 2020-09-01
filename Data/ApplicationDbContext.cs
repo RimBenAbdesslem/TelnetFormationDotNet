@@ -40,6 +40,7 @@ namespace ProcessusFormation.Data
         public DbSet<ActiviteModel> Activites { get; set; }
         public DbSet<ActiviteMetierModel> ActiviteMetiers { get; set; }
         public DbSet<ListeActiviteModel> ListeActivites { get; set; }
+        public DbSet<EvaluationFournisseurModel> EvaluationFournisseurs { get; set; }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
 
@@ -57,7 +58,8 @@ namespace ProcessusFormation.Data
             modelBuilder.Entity<ParticipantFormation>()
                 .HasOne(pt => pt.BesoinFormationModel)
                 .WithMany(pt => pt.ParticipantFormations)
-                .HasForeignKey(pt => pt.BesoinFormationId);
+                .HasForeignKey(pt => pt.BesoinFormationId)
+                .OnDelete(DeleteBehavior.Cascade);
 
             modelBuilder.Entity<ParticipantFormation>()
                 .HasOne(pt => pt.ParticipantModel)

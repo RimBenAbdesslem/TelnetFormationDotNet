@@ -40,6 +40,14 @@ namespace ProcessusFormation.Controllers.Comp__tence
             return Ok(new { });
 
         }
+        //Get all 
+        [HttpGet]
+        [Route("GetAll")]
+        public IEnumerable<Object> GetAll()
+        {
+            var metiers = _context.ListeActivites;
+            return metiers;
+        }
         [HttpPost]
         [Route("RegisterListeActivite")]
         public async Task<IActionResult> PostBesoinFormation(ListeActiviteModel model)
@@ -115,6 +123,47 @@ namespace ProcessusFormation.Controllers.Comp__tence
 
             return Ok();
         }
+        [HttpGet]
+        [Route("GetListe/{id}")]
+        public IEnumerable<Object> GetListeActivite(string id)
+        {
+
+            List<int> activite = new List<int>();
+            List<ActiviteModel> distinctItems = new List<ActiviteModel>();
+            List<int> List = new List<int>();
+            var metiers = _context.ActiviteMetiers;
+            var ListeActivite = _context.Activites;
+
+            //  return user;
+            //  List<Object> ListUser = new List<Object>();
+            foreach (var element in metiers)
+            {
+                if (element.UserId == id) //&& element.LabelId == model.LabelId
+                {
+                    //  yield return element;
+                    activite.Add(element.ActiviteId);
+
+
+
+                }
+            }
+
+            foreach (var element in ListeActivite)
+            {
+
+                for (int j = 0; j < activite.Count; j++)
+                {
+                    if (element.Id == activite[j] && !distinctItems.Contains(element))
+                    {
+                        distinctItems.Add(element);
+                    }
+                }
+
+            };
+            return distinctItems;
+        }
+
+
 
         [HttpGet]
         [Route("listeActivite/{id}")]

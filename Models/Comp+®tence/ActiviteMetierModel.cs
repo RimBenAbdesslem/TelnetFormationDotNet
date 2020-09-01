@@ -14,6 +14,11 @@ namespace ProcessusFormation.Models.Comp__tence
         public int DomaineId { get; set; }
         public int LabelId { get; set; }
         public string UserId { get; set; }
+        public string NomActivite { get; set; }
+        public string NomDomaine { get; set; }
+        public string NomLabel { get; set; }
+    
+
         public int Niveau { get; set; }
     }
 }

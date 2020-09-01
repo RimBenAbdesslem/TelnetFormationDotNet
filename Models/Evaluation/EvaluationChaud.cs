@@ -27,6 +27,8 @@ namespace ProcessusFormation.Models.Evaluation
         public string QuestionB { get; set; }
         public string Comment{ get; set; }
         public string QuestionC { get; set; }
+        public string IdParticipant { get; set; }
+        public string IdDirecteur { get; set; }
 
         public int Score_Evaluation { get; set; }
         public int Score_Satisfaction { get; set; }
